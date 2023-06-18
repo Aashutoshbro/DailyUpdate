@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 24.1%;
+  padding: 20px;
+  border:4px solid red;
+  border-radius:16px;
+  margin:4px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column  {
+    width: 49%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column  {
+    width: 99%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Daily Updates</h2>
+<h3>Updates by our team members (AKAR)</h3>
+
+<div class="row">
+  <div class="column" style="background-color:#4cd8ff;">
+  <h2>Aashutosh</h2>
+  <p>Items Done :</p>
+  <div class="points">
+    <p>
+        <p>Day 1</p>
+    </p>
+  </div>
+  </div>
+  <div class="column" style="background-color:#4cd8ff;">
+  <h2>Kisan</h2>
+  <p>Items Done :</p>
+  <div class="points">
+    <p>
+        <p>Day 1</p>
+    </p>
+  </div>
+  </div>
+  <div class="column" style="background-color:#4cd8ff;">
+  <h2>Abishek</h2>
+  <p>Items Done :</p>
+  <div class="points">
+    <p>
+        <p>Day 1</p>
+    </p>
+  </div>
+  </div>
+  <div class="column" style="background-color:#4cd8ff;">
+  <h2>Rajeev</h2>
+  <p>Items Done :</p>
+  <div class="points">
+    <p>
+        <p>Day 1</p>
+    </p>
+  </div>
+  </div>
+</div>
+
+</body>
+</html>
